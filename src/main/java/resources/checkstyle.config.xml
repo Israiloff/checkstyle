@@ -60,8 +60,11 @@
         <module name="JavadocStyle"/>
         <module name="MissingJavadocMethod">
             <property name="tokens" value="METHOD_DEF, ANNOTATION_FIELD_DEF"/>
+            <property name="ignoreMethodNamesRegex" value="^main$"/>
         </module>
-        <module name="MissingJavadocType"/>
+        <module name="MissingJavadocType">
+            <property name="skipAnnotations" value="SpringBootApplication"/>
+        </module>
         <module name="NonEmptyAtclauseDescription"/>
 
         <!-- Checks for Naming Conventions.                  -->
