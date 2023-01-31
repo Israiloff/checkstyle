@@ -56,7 +56,6 @@
         <module name="InvalidJavadocPosition"/>
         <module name="JavadocMethod"/>
         <module name="JavadocType"/>
-        <module name="JavadocVariable"/>
         <module name="JavadocStyle"/>
         <module name="MissingJavadocMethod">
             <property name="tokens" value="METHOD_DEF, ANNOTATION_FIELD_DEF"/>
