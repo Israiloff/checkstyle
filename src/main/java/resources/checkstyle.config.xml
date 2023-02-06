@@ -158,6 +158,9 @@
 
         <module name="SuppressWarningsHolder"/>
 
+        <module name="uz.cbssolutions.checkstyle.module.spring.SpringLambdaCheck"/>
+        <module name="uz.cbssolutions.checkstyle.module.spring.SpringJUnit5Check"/>
+
     </module>
 
 </module>
