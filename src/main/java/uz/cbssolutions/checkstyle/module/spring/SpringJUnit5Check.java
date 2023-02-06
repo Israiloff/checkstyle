@@ -22,7 +22,6 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 import com.puppycrawl.tools.checkstyle.utils.AnnotationUtil;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Checks that JUnit 5 conventions are followed and that JUnit 4 is not accidentally used.
@@ -71,7 +70,7 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
     private final List<DetailAST> testMethods = new ArrayList<>();
     private final Map<String, FullIdent> imports = new LinkedHashMap<>();
     private final List<DetailAST> lifecycleMethods = new ArrayList<>();
-    private List<String> unlessImports = new ArrayList<>();
+    private final List<String> unlessImports = new ArrayList<>();
 
     @Override
     public int[] getAcceptableTokens() {
@@ -133,16 +132,16 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
         for (String bannedImport : BANNED_IMPORTS) {
             FullIdent ident = this.imports.get(bannedImport);
             if (ident != null) {
-                log(ident.getLineNo(), ident.getColumnNo(), "junit5.bannedImport", bannedImport);
+                log(ident.getLineNo(), ident.getColumnNo(), "Banned imports usage. Use Junit 5", bannedImport);
             }
         }
         for (DetailAST testMethod : this.testMethods) {
             if (AnnotationUtil.containsAnnotation(testMethod, JUNIT4_TEST_ANNOTATION)) {
-                log(testMethod, "junit5.bannedTestAnnotation");
+                log(testMethod, "Banned test annotation usage. Use Junit 5");
             }
         }
-        checkMethodVisibility(this.testMethods, "junit5.testPublicMethod", "junit5.testPrivateMethod");
-        checkMethodVisibility(this.lifecycleMethods, "junit5.lifecyclePublicMethod", "junit5.lifecyclePrivateMethod");
+        checkMethodVisibility(this.testMethods, "Public modifier is not allowed. Test methods of Junit 5 must be package-private", "Private modifier is not allowed. Test methods of Junit 5 must be package-private");
+        checkMethodVisibility(this.lifecycleMethods, "Public modifier is not allowed. Lifecycle methods of Junit 5 must be package-private", "Private modifier is not allowed. Lifecycle methods of Junit 5 must be package-private");
     }
 
     private void checkMethodVisibility(List<DetailAST> methods, String publicMessageKey, String privateMessageKey) {
@@ -161,12 +160,4 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
         String name = method.findFirstToken(TokenTypes.IDENT).getText();
         log(method.getLineNo(), method.getColumnNo(), key, name);
     }
-
-    public void setUnlessImports(String unlessImports) {
-        this.unlessImports = Collections.unmodifiableList(
-                Arrays.stream(unlessImports.split(","))
-                        .map(String::trim)
-                        .collect(Collectors.toList()));
-    }
-
 }

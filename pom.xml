@@ -5,7 +5,7 @@
 
     <groupId>uz.cbssolutions</groupId>
     <artifactId>checkstyle</artifactId>
-    <version>0.1.20</version>
+    <version>0.1.22</version>
     <name>checkstyle</name>
     <packaging>jar</packaging>
 
