@@ -18,6 +18,7 @@ package uz.cbssolutions.checkstyle.module.spring;
 
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
+import uz.cbssolutions.checkstyle.module.AbstractSpringCheck;
 
 /**
  * Checks that lambda definitions follow Spring conventions. Single argument lambda

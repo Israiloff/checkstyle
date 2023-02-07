@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uz.cbssolutions.checkstyle.module.spring;
+package uz.cbssolutions.checkstyle.module;
 
 import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 
@@ -23,7 +23,7 @@ import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
  *
  * @author Phillip Webb
  */
-abstract class AbstractSpringCheck extends AbstractCheck {
+public abstract class AbstractSpringCheck extends AbstractCheck {
 
 	public static final int[] NO_REQUIRED_TOKENS = {};
 

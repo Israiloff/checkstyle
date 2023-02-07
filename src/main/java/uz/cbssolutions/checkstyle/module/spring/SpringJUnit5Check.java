@@ -20,6 +20,7 @@ import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.FullIdent;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 import com.puppycrawl.tools.checkstyle.utils.AnnotationUtil;
+import uz.cbssolutions.checkstyle.module.AbstractSpringCheck;
 
 import java.util.*;
 
