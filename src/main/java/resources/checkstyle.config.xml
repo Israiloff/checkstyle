@@ -157,11 +157,13 @@
         </module>
 
         <module name="SuppressWarningsHolder"/>
+        <module name="MissingOverride"/>
 
         <!-- Checks from Spring framework -->
         <module name="uz.cbssolutions.checkstyle.module.spring.SpringLambdaCheck"/>
         <module name="uz.cbssolutions.checkstyle.module.spring.SpringJUnit5Check"/>
 
+        <!-- Custom checks -->
         <module name="uz.cbssolutions.checkstyle.module.cbs.CbsBeanNameCheck"/>
 
     </module>
