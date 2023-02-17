@@ -29,12 +29,17 @@ import uz.cbssolutions.checkstyle.module.AbstractSpringCheck;
  */
 public class SpringLambdaCheck extends AbstractSpringCheck {
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int[] getAcceptableTokens() {
         return new int[]{TokenTypes.LAMBDA};
-
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void visitToken(DetailAST ast) {
         if (ast.getType() == TokenTypes.LAMBDA && ast.getParent() != null

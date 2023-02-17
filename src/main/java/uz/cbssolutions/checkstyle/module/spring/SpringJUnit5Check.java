@@ -73,11 +73,17 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
     private final List<DetailAST> lifecycleMethods = new ArrayList<>();
     private final List<String> unlessImports = new ArrayList<>();
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int[] getAcceptableTokens() {
         return new int[]{TokenTypes.METHOD_DEF, TokenTypes.IMPORT};
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void beginTree(DetailAST rootAST) {
         this.imports.clear();
@@ -85,6 +91,9 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
         this.lifecycleMethods.clear();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void visitToken(DetailAST ast) {
         switch (ast.getType()) {
@@ -93,6 +102,16 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
             case TokenTypes.IMPORT:
                 visitImport(ast);
                 break;
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void finishTree(DetailAST rootAST) {
+        if (shouldCheck()) {
+            check();
         }
     }
 
@@ -108,13 +127,6 @@ public class SpringJUnit5Check extends AbstractSpringCheck {
     private void visitImport(DetailAST ast) {
         FullIdent ident = FullIdent.createFullIdentBelow(ast);
         this.imports.put(ident.getText(), ident);
-    }
-
-    @Override
-    public void finishTree(DetailAST rootAST) {
-        if (shouldCheck()) {
-            check();
-        }
     }
 
     private boolean shouldCheck() {

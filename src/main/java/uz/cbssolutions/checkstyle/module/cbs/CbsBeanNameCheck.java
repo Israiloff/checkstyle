@@ -16,11 +16,17 @@ public class CbsBeanNameCheck extends AbstractSpringCheck {
     private final Pattern pattern = Pattern.compile("^\"([a-z])\\w+\"$");
     private final String[] annotations = new String[]{"Bean", "org.springframework.context.annotation.Bean"};
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int[] getAcceptableTokens() {
         return new int[]{TokenTypes.ANNOTATION};
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void leaveToken(DetailAST ast) {
         if (containsSibling(ast.getFirstChild(), TokenTypes.IDENT, annotations, ast.getChildCount())
