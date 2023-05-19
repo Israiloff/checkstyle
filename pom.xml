@@ -5,7 +5,7 @@
 
     <groupId>uz.cbssolutions</groupId>
     <artifactId>checkstyle</artifactId>
-    <version>0.3.25</version>
+    <version>0.3.26</version>
     <name>checkstyle</name>
     <packaging>jar</packaging>
 
@@ -13,17 +13,6 @@
         <java.version>17</java.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
-
-
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>jfrog-artifactory-0-releases</name>
-            <url>http://jfrog-artifactory.hayotbank.uz/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement>
-
-
 
     <dependencies>
         <dependency>
