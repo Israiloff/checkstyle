@@ -5,7 +5,7 @@
 
     <groupId>uz.cbssolutions</groupId>
     <artifactId>checkstyle</artifactId>
-    <version>0.3.26</version>
+    <version>0.3.27</version>
     <name>checkstyle</name>
     <packaging>jar</packaging>
 
@@ -48,7 +48,7 @@
                             <includeEmptyDirs>true</includeEmptyDirs>
                             <resources>
                                 <resource>
-                                    <directory>${basedir}/src/main/java/resources</directory>
+                                    <directory>${basedir}/src/main/resources</directory>
                                     <filtering>false</filtering>
                                 </resource>
                             </resources>
