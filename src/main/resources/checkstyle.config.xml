@@ -60,7 +60,7 @@
       <property name="ignoreMethodNamesRegex" value="^main$" />
     </module>
     <module name="MissingJavadocType">
-      <property name="skipAnnotations" value="SpringBootApplication,Configuration,Repository,ConfigurationProperties"/>
+      <property name="skipAnnotations" value="SpringBootApplication,Configuration,Repository"/>
     </module>
     <module name="NonEmptyAtclauseDescription" />
 
