@@ -6,7 +6,7 @@
 
   <groupId>com.github.israiloff</groupId>
   <artifactId>checkstyle-rules</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>checkstyle-rules</name>
   <packaging>jar</packaging>
 
