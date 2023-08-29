@@ -160,9 +160,6 @@
     <module name="com.github.israiloff.checkstyle.module.spring.SpringLambdaCheck" />
     <module name="com.github.israiloff.checkstyle.module.spring.SpringJUnit5Check" />
 
-    <!-- Custom checks -->
-    <module name="com.github.israiloff.checkstyle.module.cbs.CbsBeanNameCheck" />
-
   </module>
 
 </module>
