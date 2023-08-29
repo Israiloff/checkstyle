@@ -37,9 +37,9 @@ Example in [***pom.xml***](https://maven.apache.org/guides/introduction/introduc
                 </executions>
                 <dependencies>
                     <dependency>
-                        <groupId>uz.cbssolutions</groupId>
-                        <artifactId>checkstyle</artifactId>
-                        <version>CBS_CHECKSTYLE_VERSION</version>
+                        <groupId>com.github.israiloff</groupId>
+                        <artifactId>checkstyle-rules</artifactId>
+                        <version>CHECKSTYLE_RULES_VERSION</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -49,4 +49,4 @@ Example in [***pom.xml***](https://maven.apache.org/guides/introduction/introduc
 ```
 
 > [***APACHE_CHECKSTYLE_VERSION***](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin) is version of [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/). 
-> [***CBS_CHECKSTYLE_VERSION***](https://github.com/Israiloff/checkstyle) is version of [***this plugin***](https://github.com/Israiloff/checkstyle).
+> [***CHECKSTYLE_RULES_VERSION***](https://github.com/Israiloff/checkstyle) is version of [***this plugin***](https://github.com/Israiloff/checkstyle).
