@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package uz.cbssolutions.checkstyle.module.spring;
+package com.github.israiloff.checkstyle.module.spring;
 
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
-import uz.cbssolutions.checkstyle.module.AbstractSpringCheck;
+import com.github.israiloff.checkstyle.module.AbstractSpringCheck;
 
 /**
  * Checks that lambda definitions follow Spring conventions. Single argument lambda

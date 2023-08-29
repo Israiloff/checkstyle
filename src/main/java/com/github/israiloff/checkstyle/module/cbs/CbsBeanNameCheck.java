@@ -1,8 +1,8 @@
-package uz.cbssolutions.checkstyle.module.cbs;
+package com.github.israiloff.checkstyle.module.cbs;
 
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
-import uz.cbssolutions.checkstyle.module.AbstractSpringCheck;
+import com.github.israiloff.checkstyle.module.AbstractSpringCheck;
 
 import java.util.Arrays;
 import java.util.Objects;

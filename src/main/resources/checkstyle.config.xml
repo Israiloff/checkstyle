@@ -157,11 +157,11 @@
     <module name="MissingOverride" />
 
     <!-- Checks from Spring framework -->
-    <module name="uz.cbssolutions.checkstyle.module.spring.SpringLambdaCheck" />
-    <module name="uz.cbssolutions.checkstyle.module.spring.SpringJUnit5Check" />
+    <module name="com.github.israiloff.checkstyle.module.spring.SpringLambdaCheck" />
+    <module name="com.github.israiloff.checkstyle.module.spring.SpringJUnit5Check" />
 
     <!-- Custom checks -->
-    <module name="uz.cbssolutions.checkstyle.module.cbs.CbsBeanNameCheck" />
+    <module name="com.github.israiloff.checkstyle.module.cbs.CbsBeanNameCheck" />
 
   </module>
 

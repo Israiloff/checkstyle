@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uz.cbssolutions.checkstyle.module;
+package com.github.israiloff.checkstyle.module;
 
 import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 

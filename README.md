@@ -1,10 +1,10 @@
 # Checkstyle
 
 Code checking rules for matching code conventions of company. Must be used as part of [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/). 
-To configure [***this plugin***](https://gitlab.hayotbank.uz/mobile-back/plugins/general/checkstyle) you must add 
+To configure [***this plugin***](https://github.com/Israiloff/checkstyle) you must add 
 [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/) into your project 
 ([***pom.xml***](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)/[***gradle.json***](https://gradle.org/)).
-Then just include [***this plugin***](https://gitlab.hayotbank.uz/mobile-back/plugins/general/checkstyle) into the 
+Then just include [***this plugin***](https://github.com/Israiloff/checkstyle) into the 
 ***dependencies*** of [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/).
 
 Example in [***pom.xml***](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html):
@@ -49,4 +49,4 @@ Example in [***pom.xml***](https://maven.apache.org/guides/introduction/introduc
 ```
 
 > [***APACHE_CHECKSTYLE_VERSION***](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin) is version of [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/). 
-> [***CBS_CHECKSTYLE_VERSION***](http://jfrog-artifactory.hayotbank.uz/artifactory/libs-release/uz/cbssolutions/checkstyle/) is version of [***this plugin***](https://gitlab.hayotbank.uz/mobile-back/plugins/general/checkstyle).
+> [***CBS_CHECKSTYLE_VERSION***](https://github.com/Israiloff/checkstyle) is version of [***this plugin***](https://github.com/Israiloff/checkstyle).
