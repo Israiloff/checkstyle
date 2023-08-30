@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.github.israiloff.checkstyle.module.spring;
+package io.github.israiloff.checkstyle.module.spring;
 
-import com.github.israiloff.checkstyle.module.AbstractSpringCheck;
+import io.github.israiloff.checkstyle.module.AbstractSpringCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.FullIdent;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;

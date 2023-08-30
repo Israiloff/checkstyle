@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.israiloff.checkstyle.module;
+package io.github.israiloff.checkstyle.module;
 
 import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 

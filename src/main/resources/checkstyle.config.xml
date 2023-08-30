@@ -157,8 +157,8 @@
     <module name="MissingOverride" />
 
     <!-- Checks from Spring framework -->
-    <module name="com.github.israiloff.checkstyle.module.spring.SpringLambdaCheck" />
-    <module name="com.github.israiloff.checkstyle.module.spring.SpringJUnit5Check" />
+    <module name="io.github.israiloff.checkstyle.module.spring.SpringLambdaCheck" />
+    <module name="io.github.israiloff.checkstyle.module.spring.SpringJUnit5Check" />
 
   </module>
 
