@@ -1,3 +1,5 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.israiloff/checkstyle-rules/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.israiloff/checkstyle-rules)
+
 # Checkstyle
 
 Code checking rules for matching code conventions of company. Must be used as part of [***Apache Checkstyle plugin***](https://checkstyle.sourceforge.io/). 
