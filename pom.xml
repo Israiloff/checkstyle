@@ -6,7 +6,7 @@
 
     <groupId>io.github.israiloff</groupId>
     <artifactId>checkstyle-rules</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <url>https://github.com/Israiloff/checkstyle-rules</url>
     <description>Sun and Spring checks included library</description>
