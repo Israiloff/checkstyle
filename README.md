@@ -39,7 +39,7 @@ Example in [***pom.xml***](https://maven.apache.org/guides/introduction/introduc
                 </executions>
                 <dependencies>
                     <dependency>
-                        <groupId>com.github.israiloff</groupId>
+                        <groupId>io.github.israiloff</groupId>
                         <artifactId>checkstyle-rules</artifactId>
                         <version>CHECKSTYLE_RULES_VERSION</version>
                     </dependency>
